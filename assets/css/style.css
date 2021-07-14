@@ -357,7 +357,7 @@ h2 {
     grid-template-columns: repeat(1, 1fr);
   }
   .player-card {
-    width: 50%;
+    width: 100%;
     margin: auto;
   }
   .player-thumble img {
@@ -464,8 +464,8 @@ h2 {
   .banner-img > img {
     width: 57%;
     position: absolute;
-    top: 50%;
-    left: 29%;
+    top: 16%;
+    left: 25%;
   }
   .banner-img .ball img {
     position: relative;
