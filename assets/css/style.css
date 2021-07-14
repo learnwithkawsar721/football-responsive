@@ -357,7 +357,7 @@ h2 {
     grid-template-columns: repeat(1, 1fr);
   }
   .player-card {
-    width: 100%;
+    width: 100% !important;
     margin: auto;
   }
   .player-thumble img {
