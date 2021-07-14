@@ -1,0 +1,541 @@
+/* ===================
+Google Fonts
+==================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+:root {
+  --theme-color: #2d25a0;
+  --heading-color: #18191f;
+  --para-color: #6c6c6c;
+  --baice-color: #ffffff;
+  --button-color: #e02c6d;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--baice-color);
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  color: var(--para-color);
+}
+h2 {
+  font-size: 1.75rem;
+  line-height: 2.375rem;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+.btn {
+  background-color: var(--button-color);
+  color: var(--baice-color);
+  text-align: center;
+  padding: 10px 24px;
+}
+.container {
+  width: 1050px;
+  margin: auto;
+}
+/* =======================
+*Common Css Style End =====
+=========================== */
+.navbar {
+  width: 100%;
+  background-color: var(--theme-color);
+  padding: 40px 0;
+}
+.container-fluid {
+  width: 90%;
+  margin: auto;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  /* display: none; */
+}
+.nav-list li a {
+  color: var(--baice-color);
+  padding: 0 30px;
+  transition: color 0.4s linear;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.nav-list li a:hover {
+  color: var(--button-color);
+}
+.nav-icon i {
+  font-size: 20px;
+  line-height: 2em;
+  color: var(--baice-color);
+  display: none;
+}
+/* =======================
+    *navBar Css Style End
+=========================== */
+.header-area {
+  width: 100%;
+  height: 100%;
+  background-color: var(--theme-color);
+}
+
+.main-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.main-header:hover .banner-img > img {
+  transform: scale(1.2);
+  /* transition: all 0.2s linear; */
+}
+.main-header:hover .ball img {
+  left: 400px;
+  transition: all 3s ease-out 3s;
+}
+.banner-img > img {
+  width: 38%;
+  position: absolute;
+  top: 111px;
+  left: 52px;
+}
+
+.banner-img .ball img {
+  position: relative;
+  top: -30px;
+}
+
+.banner-title {
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: 700;
+  color: var(--baice-color);
+}
+.banner-button {
+  padding-top: 20px;
+}
+/* =======================
+    *Header or Banner Css Style End
+=========================== */
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding: 60px 15px 0 15px;
+}
+.player-card {
+  width: 330px;
+  background-color: var(--baice-color);
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  transition: box-shadow 0.5s linear;
+}
+.player-card:hover {
+  box-shadow: none;
+}
+.player-thumble {
+  text-align: center;
+  margin-top: 10px;
+}
+.player-thumble img {
+  width: 300px;
+  height: 256px;
+  margin: auto;
+  border-radius: 10px;
+}
+.player-info {
+  padding: 15px;
+}
+
+.player-pera {
+  margin: 10px 0;
+}
+
+/* =======================
+    *highlights  Style  
+=========================== */
+.highlights-area {
+  margin: 100px 0;
+}
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  padding: 0px 15px;
+  /* flex-direction: row;
+     */
+}
+.highlight-details {
+  margin-right: 60px;
+  /* align-items: center; */
+}
+.highlight-title {
+  font-size: 36.8px;
+  line-height: 60px;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+.highlight-button {
+  padding: 20px 0;
+}
+/* =======================
+    *upcoming-area Style 
+=========================== */
+.upcoming-area {
+  width: 100%;
+  height: 100%;
+  background: url(/assets/images/upcoming.jpg) center top no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+.upcoming-title {
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.upcoming-details {
+  color: var(--baice-color);
+  text-align: center;
+}
+.upcoming-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.club-img {
+  padding: 20px 50px;
+}
+.club-text-info {
+  margin: 20px 0;
+}
+.club-text-info h2 {
+  color: #fbc02d;
+  margin: 20px 0;
+}
+
+/* Subscribe Area Style */
+.subscribe-area {
+  background-color: var(--theme-color);
+  padding: 50px 0;
+}
+.subscribe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.subscribe-info h1 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--baice-color);
+}
+.subscribe-info span {
+  color: var(--button-color);
+}
+/* Footer Area Dtyle */
+.footer-area {
+  padding: 60px 0;
+}
+.footer-content {
+  text-align: center;
+}
+.footer-logo img {
+  height: 110px;
+  width: 483px;
+}
+.footer-socil a {
+  margin: 10px 14px;
+}
+.footer-socil a i {
+  font-size: 32px;
+}
+.footer-socil a .fa-twitter {
+  color: #1da1f2;
+}
+.footer-socil a .fa-linkedin {
+  color: #0a66c2;
+}
+.footer-socil a .fa-instagram {
+  color: #e4405f;
+}
+.footer-socil a .fa-facebook {
+  color: #1877f2;
+}
+.footer-socil a .fa-youtube {
+  color: #cd201f;
+}
+
+.footer-text p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-top: 20px;
+}
+/* ================= Mobile devices ============================ */
+
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .container-fluid {
+    width: 100%;
+    padding: 0 15px;
+  }
+  /* Navbar Style */
+  .nav-list {
+    display: none;
+  }
+  .nav-icon i {
+    display: block;
+  }
+  /* Banner or Header */
+  .main-header {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0px;
+  }
+  .main-header {
+    padding: 0;
+  }
+  .banner {
+    padding-bottom: 50px;
+  }
+  .banner-img > img {
+    width: 57%;
+    position: absolute;
+    top: 50%;
+    left: 29%;
+  }
+  .banner-img .ball img {
+    position: relative;
+    top: 24%;
+    left: 32%;
+    width: 64%;
+  }
+  .banner-title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .banner-button {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  /* players Stayle Start */
+
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player-card {
+    width: 50%;
+    margin: auto;
+  }
+  .player-thumble img {
+    width: 95%;
+    margin: auto;
+  }
+  .palyer-name {
+    font-size: 0.9rem;
+  }
+  .player-pera {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+  /* players Stayle End */
+
+  /* highlights-area Stayle Start */
+  .highlights-area {
+    margin: 60px 0;
+  }
+  .highlights {
+    grid-template-columns: 1fr;
+    padding: 0px 15px;
+    grid-gap: 0;
+  }
+  .highlight-details {
+    margin-right: 0 !important;
+  }
+
+  .highlight-thumble {
+    margin-top: 30px;
+  }
+  .highlight-thumble img {
+    width: 100%;
+    height: auto;
+  }
+  /* highlights-area Stayle End */
+
+  /* Upcoming-area Stayle End */
+  .upcoming-title {
+    margin-bottom: 0;
+  }
+  .club-img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .club-img img {
+    width: 90%;
+  }
+  /* Subscribe Area Style */
+  .subscribe {
+    flex-direction: column;
+    padding: 0px 15px;
+  }
+  .subscribe-info h1 {
+    font-size: 17px;
+  }
+  .subscribe-button {
+    padding-top: 24px;
+  }
+  /* Footer Area  */
+  .footer-logo img {
+    height: 30px;
+    width: 125px;
+  }
+  .footer-socil {
+    padding-top: 10px;
+  }
+  .footer-socil a {
+    margin: 0 5px;
+  }
+  .footer-socil a i {
+    font-size: 20px;
+  }
+}
+
+/* ================= iPads, Tablets =================== */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .container-fluid {
+    width: 100%;
+    padding: 0 15px;
+  }
+  /* Navbar Style */
+  .nav-list {
+    display: none;
+  }
+  .nav-icon i {
+    display: block;
+  }
+  /* Banner or Header */
+  .main-header {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0px;
+  }
+  .main-header {
+    padding: 0;
+  }
+  .banner {
+    padding-bottom: 50px;
+  }
+  .banner-img > img {
+    width: 57%;
+    position: absolute;
+    top: 50%;
+    left: 29%;
+  }
+  .banner-img .ball img {
+    position: relative;
+    top: 24%;
+    left: 32%;
+    width: 64%;
+  }
+  .banner-title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .banner-button {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  /* players Stayle Start */
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+    /* justify-self: center; */
+    align-self: center;
+    justify-content: center;
+    /* align-content: center; */
+  }
+  .player-card {
+    width: 100% !important;
+    margin: 0 auto !important;
+
+    /* text-align: center; */
+  }
+  .player-card {
+    width: 50%;
+    /* margin: auto; */
+  }
+  .player-thumble {
+    margin-top: 0 !important;
+  }
+  .player-thumble img {
+    width: 95%;
+    height: auto;
+    margin: auto;
+  }
+  /* players Stayle End */
+  /* highlights-area Stayle Start */
+  .highlights-area {
+    margin: 60px 0;
+    padding: 0px 15px;
+  }
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+  .highlight-details {
+    margin-right: 0 !important;
+    text-align: left;
+    padding: 0px 15px;
+  }
+  .highlight-thumble img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* highlights-area Stayle End */
+
+  /* Subscribe Area Style */
+  .subscribe {
+    flex-direction: column;
+    padding: 0px 15px;
+  }
+  .subscribe-info h1 {
+    font-size: 32px;
+  }
+  .subscribe-button {
+    padding-top: 24px;
+  }
+}
